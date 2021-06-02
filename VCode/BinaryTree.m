@@ -150,6 +150,42 @@
     return list.copy;
 }
 
++ (NSArray *)postOrder_NotRecursion:(BinaryTreeNode *)rootNode
+{
+    if (!rootNode) {
+        return @[];
+    }
+    
+    NSMutableArray *resultList = @[].mutableCopy;
+    NSMutableArray *tempList = @[].mutableCopy;
+
+    BinaryTreeNode *qNode = rootNode;
+    BinaryTreeNode *lastNode = nil;
+    
+    while (qNode || tempList.count > 0) {
+        if (qNode) {
+            [tempList addObject:qNode];
+            qNode = qNode.left;
+        } else {
+            
+            BinaryTreeNode *tempLast = tempList.lastObject;
+            
+            if (tempLast.right && tempLast.right != lastNode) {
+                
+                qNode = tempLast.right;
+                
+            } else {
+                lastNode = tempLast;
+                
+                [tempList removeLastObject];
+                [resultList addObject:tempLast];
+                qNode = nil;
+            }
+        }
+    }
+    return resultList.copy;
+}
+
 
 + (NSArray *)levelOrder:(BinaryTreeNode *)rootNode
 {

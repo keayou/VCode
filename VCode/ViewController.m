@@ -92,6 +92,12 @@
     NSString *postOrderresultStr = [postOrderres componentsJoinedByString:@"_"];
     NSLog(@" BinaryTree postOrder : %@", postOrderresultStr);
     
+    // 二叉树后序遍历 非递归
+    NSArray *postNotRecursionList = [BinaryTree postOrder_NotRecursion:node];
+    NSArray *postNotRecursionres = [postNotRecursionList valueForKeyPath:@"val"];
+    NSString *postNotRecursionresultStr = [postNotRecursionres componentsJoinedByString:@"_"];
+    NSLog(@" BinaryTree postOrder_NotRecursion : %@", postNotRecursionresultStr);    
+    
     // 二叉树层序遍历
     NSArray *levelOrderList = [BinaryTree levelOrder:node];
     NSArray *levelOrderRes = [levelOrderList valueForKeyPath:@"val"];

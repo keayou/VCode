@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSArray *)midOrder_NotRecursion:(BinaryTreeNode *)rootNode;
 
 + (NSArray *)postOrder:(BinaryTreeNode *)rootNode;
++ (NSArray *)postOrder_NotRecursion:(BinaryTreeNode *)rootNode;
+
 + (NSArray *)levelOrder:(BinaryTreeNode *)rootNode;
 + (NSArray *)zLevelOrder:(BinaryTreeNode *)rootNode;
 
