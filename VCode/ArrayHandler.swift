@@ -10,6 +10,15 @@ import Foundation
 
 @objc public class ArraySolution: NSObject {
     
+    @objc public func solution() {
+        
+        let twoSumReult = twoSum([1, 4, 3, 6], 9)
+        print(twoSumReult)
+        
+        let trigleGenerate = generate(2)
+        print(trigleGenerate)
+    }
+    
     /*
      给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。
      你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。
@@ -17,7 +26,7 @@ import Foundation
 
      链接：https://leetcode-cn.com/problems/two-sum
      */
-    @objc public static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         
         guard nums.count > 1 else {
             return []
@@ -233,7 +242,7 @@ import Foundation
      
      https://leetcode-cn.com/problems/pascals-triangle/
      */
-    @objc public static func generate(_ numRows: Int) -> [[Int]] {
+    func generate(_ numRows: Int) -> [[Int]] {
 
         var resultList = [[Int]]()
         var curRowList = [1]

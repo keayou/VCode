@@ -23,10 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    NSArray *list = [ArraySolution twoSum:@[@1, @4, @3, @6] :9];
-    NSArray *lis22t = [ArraySolution generate:5];
-    
     // 常驻线程
     ResidentThreadTestView *residentThreadTestView = [[ResidentThreadTestView alloc] init];
     residentThreadTestView.userInteractionEnabled = YES;
@@ -44,6 +40,8 @@
     [self linkHandle];
     
     [self othersHandle];
+    
+    [self arraySolution];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -109,6 +107,12 @@
     NSArray *zLevelOrderRes = [zLevelOrderList valueForKeyPath:@"val"];
     NSString *zLevelOrderResultStr = [zLevelOrderRes componentsJoinedByString:@"_"];
     NSLog(@" BinaryTree zLevelOrder : %@", zLevelOrderResultStr);
+    
+    
+    BinaryTreeNode *childNode = [BinaryTreeNode createNodeTree:@[@(14), @(66), @(77)]];
+    
+    BOOL isChildTree = [BinaryTree isChildTree:node targetTree:childNode];
+    NSLog(@" BinaryTree isChildTree : %@", isChildTree ? @"YES" : @"NO");
 }
 
 #pragma mark - 链表
@@ -156,6 +160,14 @@
     NSLog(@" binarySearchResut is %@ ", binarySearchResut != -1 ? @"Success" : @"Failed");
 }
 
+#pragma mark - 数组
+- (void)arraySolution
+{
+    ArraySolution *solution = [ArraySolution new];
+    [solution solution];
+}
+
+
 #pragma mark - 其他
 - (void)othersHandle
 {
@@ -167,7 +179,5 @@
     NSArray *twoSumList = [Others twoSum:@[@12, @2, @3, @4, @5, @0] target:5];
     NSLog(@"twoSum result %@ ", twoSumList);
 }
-
-
 
 @end

@@ -33,6 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSArray *)levelOrder:(BinaryTreeNode *)rootNode;
 + (NSArray *)zLevelOrder:(BinaryTreeNode *)rootNode;
 
++ (BOOL)isChildTree:(BinaryTreeNode *)rootNode targetTree:(BinaryTreeNode *)tNode;
 
 @end
 

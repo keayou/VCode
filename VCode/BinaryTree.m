@@ -270,6 +270,32 @@
 }
 
 
+/// 二叉树的子树
++ (BOOL)isChildTree:(BinaryTreeNode *)rootNode targetTree:(BinaryTreeNode *)tNode
+{
+    if (tNode == nil || rootNode == nil) {
+        return NO;
+    }
+    return [self isChildTree_helper:rootNode targetTree:tNode] || [self isChildTree:rootNode.left targetTree:tNode] || [self isChildTree:rootNode.right targetTree:tNode];
+}
++ (BOOL)isChildTree_helper:(BinaryTreeNode *)rootNode targetTree:(BinaryTreeNode *)tNode
+{
+    if (tNode == nil) {
+        return YES;
+    }
+    if (rootNode == nil) {
+        return NO;
+    }
+    
+    if (rootNode.val == tNode.val) {
+        BOOL left = [self isChildTree_helper:rootNode.left targetTree:tNode.left];
+        BOOL right = [self isChildTree_helper:rootNode.right targetTree:tNode.right];
+        return left && right;
+    } else {
+        return NO;
+    }
+
+}
 
 
 @end

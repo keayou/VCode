@@ -21,6 +21,7 @@
 		1ADED5D825B12FD700CB6ECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ADED5D725B12FD700CB6ECB /* Assets.xcassets */; };
 		1ADED5DB25B12FD700CB6ECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADED5D925B12FD700CB6ECB /* LaunchScreen.storyboard */; };
 		1ADED5DE25B12FD700CB6ECB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADED5DD25B12FD700CB6ECB /* main.m */; };
+		4478EBDE266A055E006DBEAC /* DivideAndConquer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478EBDD266A055E006DBEAC /* DivideAndConquer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		1ADED5DA25B12FD700CB6ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1ADED5DC25B12FD700CB6ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ADED5DD25B12FD700CB6ECB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4478EBDD266A055E006DBEAC /* DivideAndConquer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivideAndConquer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				1A26CA65266374E700A23850 /* ArrayHandle.h */,
 				1A26CA66266374E700A23850 /* ArrayHandle.m */,
 				1A26CA6926637FE900A23850 /* ArrayHandler.swift */,
+				4478EBDD266A055E006DBEAC /* DivideAndConquer.swift */,
 				1ADED5D425B12FD100CB6ECB /* Main.storyboard */,
 				1ADED5D725B12FD700CB6ECB /* Assets.xcassets */,
 				1ADED5D925B12FD700CB6ECB /* LaunchScreen.storyboard */,
@@ -187,6 +190,7 @@
 				1A6AD6C3262AF82A00596A4F /* Search.m in Sources */,
 				1A6AD6CF262C325300596A4F /* Others.m in Sources */,
 				1A26CA6A26637FE900A23850 /* ArrayHandler.swift in Sources */,
+				4478EBDE266A055E006DBEAC /* DivideAndConquer.swift in Sources */,
 				1ADED5DE25B12FD700CB6ECB /* main.m in Sources */,
 				1A6AD6C7262AFDEB00596A4F /* BinaryTree.m in Sources */,
 				1ADED5D025B12FD100CB6ECB /* SceneDelegate.m in Sources */,
